@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>1st Project</h1>
-    <hr>
-    <div> 
-        <form>
-        <h2>LOGIN</h2>
-        <!-- <h3> <input type ="radio" value="Sign in" name="si" >Sign in <input type ="radio" value="Sign up" name="su" >Sign up </h3> -->
-        <p>Username : <input type="text" class="sigin" placeholder = "username"> </p>
-        
-        <P>Password : <input type="password" class="sigin" placeholder = "password"> </P>
-
-        <span>Forgot Password <a href="link">Click</a> </span   
-        <br/>
-        <h3><input type="submit" value="Login" > </h3> 
-        <p>Don't have an account? <a href="/FirstProject/signup.html">Sign up</a> </p>
-       
-        
+  <div class="box">
+    <div class="heading" id="title"> Sign Up</div>
+    <div class="inner">
+          <form>
+            <div class="show" id="mob">
+                <input type="number"  required>
+                <label>Mobile No.</label>
+            </div>
+            <div class="show">
+                <input type="text" id="name" required>
+                <label>Name</label>
+            </div>
+            <div class="show">
+                <input type="email" id="email" required>
+                <label>Email</label>
+            </div>
+            <div class="show" id="pass">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="show">
+                <input type="password" id="conpas" required>
+                <label>Confirm Password</label>
+            </div>
         </form>
+     
+        <div class="btn">
+           
+           <button type="button" id="signupbtn">Sign Up</button>
+           <button type="button" id="signinbtn" class="disable">Sign In</button>
 
-    </div>
-
+        </div>   
+  </div>
+  <script src="java.js"></script>
 </body>
 </html>
