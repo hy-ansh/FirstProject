@@ -1,6 +1,12 @@
 body{
     background-image: url("background.webp");
     background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+}
+p{
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 0.85em;;
 }
 
 .box{
@@ -13,7 +19,13 @@ body{
     border: 2px solid black;
     border-radius: 5%;
     backdrop-filter: blur(15px);
+    
+    
   
+}
+form{
+    padding:10px;
+    
 }
 
 .heading{
@@ -41,7 +53,7 @@ body{
     align-items: center;
     margin-top: 20px;
     align-content: center;
-   margin-bottom:10px;
+    margin-bottom:2px;
 
 }
 .btn button{
@@ -52,6 +64,7 @@ body{
     border: 2px solid rgba(0, 0, 0, 0.5);
     color: aliceblue;
     align-self: center;
+
     
 }
 
@@ -80,7 +93,7 @@ input:valid ~ label{
 .show{
     height:60px;
     position: relative;
-
+    
 }
 .show input{
     margin-left: 10px;
@@ -99,15 +112,17 @@ input:valid ~ label{
     transform:translateY(-50%);
     font-size: 1.2em;
     color: black;
+    margin-top: 5px;
+
 } 
-#para>a{
+p>a{
     display: contents;
     color: white;
     margin:10px;
     text-decoration: none;
-    font-size: 1.2em;
+    
 }
-#para>a:hover{
+p>a:hover{
     color:black;
     text-decoration: underline;
 }
