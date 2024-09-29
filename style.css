@@ -19,6 +19,7 @@ p{
     border: 2px solid black;
     border-radius: 5%;
     backdrop-filter: blur(15px);
+    transition: height 0.5s;
     
     
   
@@ -57,22 +58,23 @@ form{
 
 }
 .btn button{
-    height:70px;
+    height:40px;
     width:100px;
     background-color: purple;
-    border-radius: 30%;
+    border-radius: 10%;
     border: 2px solid rgba(0, 0, 0, 0.5);
     color: aliceblue;
     align-self: center;
+    transition: color 0.5s;
 
     
 }
 
 .btn button.disable{
-    height:70px;
+    height:40px;
     width:100px;
     background-color:transparent;
-    border-radius: 30%;
+    border-radius: 15%;
     border: 2px solid rgba(0, 0, 0, 0.5);
     color: black;
    
@@ -94,6 +96,7 @@ input:valid ~ label{
     height:60px;
     position: relative;
     
+    
 }
 .show input{
     margin-left: 10px;
@@ -104,6 +107,8 @@ input:valid ~ label{
     outline: none;
     border-bottom: 2px solid black;
     font-size: 1.2em;
+    color:darkslategrey;
+    
 }
 .show label{
     position: absolute;
@@ -111,8 +116,9 @@ input:valid ~ label{
     left:10px;
     transform:translateY(-50%);
     font-size: 1.2em;
-    color: black;
+    color:black;
     margin-top: 5px;
+    transition: top 0.5s;
 
 } 
 p>a{
